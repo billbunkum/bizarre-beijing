@@ -131,10 +131,10 @@ Reasons for using Webpack:
   + Doing this makes the commands *not* available from Terminal, but allows them to be accessed through *scripts* which will appear in `package.json`
   
     W/in *package.json*:
-    ``` "scripts": { ```
-    ```   "serve": "live-server public/" ```
-    ```   "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch " ```
-    ``` },```
+    ``` "scripts": { 
+       "serve": "live-server public/" 
+       "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch "
+    }, ```
     + *serve* and *build* could be anything, *chicken* and *egg* would work just as well.
     + NOTE: *serve* will not be used once we set up Webpack, as `module` w/in Webpack will do all of that for us...see below.
 
