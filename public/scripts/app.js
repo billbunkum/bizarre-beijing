@@ -1,8 +1,8 @@
 'use strict';
 
-console.log('here');
+console.log('webpack here');
 
-var template = React.createElement('div', null);
-var appRoot = document.getElementById('app');
+// var template = React.createElement('div', null);
+// var appRoot = document.getElementById('app');
 
 // ReactDOM.render(template, appRoot);

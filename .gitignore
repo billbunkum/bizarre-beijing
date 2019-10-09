@@ -3,5 +3,7 @@
 .AppleDouble
 .LSOverride
 
+# GENERATED FILES
 node_modules/
 yarn.lock
+bundle.js

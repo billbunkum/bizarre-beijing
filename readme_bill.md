@@ -9,7 +9,7 @@ Uses: Babel (JSX compilation), Live-server (local server), Yarn/NPM (installatio
 
 1. Install the following:
   + Yarn or NPM
-  + Live-server
+  + Live-server (see below for implementing w/Webpack)
   + Babel
   + NodeJS
 
@@ -46,6 +46,7 @@ Uses: Babel (JSX compilation), Live-server (local server), Yarn/NPM (installatio
 + Babel compiles JSX into Javascript
 + Install `babel`, `env` preset, `react` preset
 
+### GLOBAL Installs (will not use w/Webpack)
 * Setting up the *environment*
   1. Using Yarn to install Babel
   `$ yarn global add babel-cli@6.24.1`
@@ -76,7 +77,6 @@ What to do in Terminal to start working
   3. Start up `live-server public`
 
   ## Using React
-
 + Event handlers w/in HTML bits of .js file
 *examples* With Forms, using `e.preventDefault()` so full page is not *refreshed* when Form fires.
   + `e` stands for 'element'
@@ -110,6 +110,9 @@ OR
 4. Purging/Clearing:
 `localStorage.clear();`
 
+# A Better Way (Using Webpack)
++ Instead of doing everything CLI, use WEBPACK and Scripts.
+
 ## Package.json Scripts & Webpack
 + Gets away from Global modules – this is good cos
   *EXAMPLE*: live-server, babel
@@ -126,19 +129,21 @@ Reasons for using Webpack:
 1. Delete *global* modules.
   W/yarn `$ yarn global remove babel-cli live-server`
   W/npm `$ npm uninstall -g babel-cli live-server`
-2. Re-install them but *locally*.
+2. Re-install them but **locally**.
   From w/in project folder, `$ yarn add live-server babel-cli@6.24.1`
   + Doing this makes the commands *not* available from Terminal, but allows them to be accessed through *scripts* which will appear in `package.json`
   
-    W/in *package.json*:
-    ``` "scripts": { 
-       "serve": "live-server public/" 
-       "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch "
-    }, ```
-    + *serve* and *build* could be anything, *chicken* and *egg* would work just as well.
-    + NOTE: *serve* will not be used once we set up Webpack, as `module` w/in Webpack will do all of that for us...see below.
+  W/in *package.json*:
+  ``` "scripts": { 
+      "serve": "live-server public/" 
+      "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch "
+  }, ```
 
-    Use in Terminal:
++ *serve* and *build* could be anything, *chicken* and *egg* would work just as well.
+    
++ NOTE: *serve* will not be used once we set up Webpack, as `module` w/in Webpack will do all of that for us...see below.
+
+  Use in Terminal:
     `$ yarn run serve`
     `$ yarn run build`
 
@@ -155,7 +160,7 @@ Reasons for using Webpack:
 
 `const path = require(path); ` *see below* 
 `  module.exports = { `
-`    entry: './src/app.js,' `
+`    entry: './src/app.js', `
 `    output: { `
 `      path: path.join(__dirname, 'public'), ` *see below*
 `      filename: 'bundle.js' `
@@ -179,7 +184,7 @@ W/in `index.html`:
 Can remove other *scripts* tags and replace them w/ 
   ` <script src="/bundle.js"></script> `
 
-+ Need to re-install some Dependencies and then `import` them.
++ Need to **re-install** some Dependencies and then `import` them.
 1. react & react-dom
 `$ yarn add react@16.0.0 react-dom@16.0.0 `
   + Still is not working w/in *app.js* because needs import.
@@ -226,7 +231,7 @@ Can remove other *scripts* tags and replace them w/
   + Add it to *webpack.config.js*
   ` devServer: { contentBase: path.join(__dirname, 'public') }`
     + Does not generate a `bundle.js` again and again as it runs it from memory (and speeds up reloading)
-    + *NOTE* Once we Deploy, will still use `$ yarn run build` for producing `bundle.js`, as we will need to upload that for Deployment.
+    + *NOTE* Once we **Deploy**, will still use `$ yarn run build` for producing `bundle.js`, as we will need to upload that for Deployment.
   + Set up *Script* w/in *package.json*
     ` "dev-server": "webpack-dev-server" `
     + No longer need the *--watch* in any longer as *devServer* will do this,
