@@ -1,0 +1,12 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.upcoming-event {
+  border: 3px solid #888888;
+  margin: 24px;
+  padding: 24px;
+}
