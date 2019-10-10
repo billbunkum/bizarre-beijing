@@ -1,13 +1,14 @@
-header {
-  background-color: #060a08;
-  margin-bottom: 48px;
-  margin-top: 16px;
+.header {
+  background-color: $black;
+  margin: $m-size 0 $xl-size 0;
   text-align: center;
 }
 
-header a {
-  color: #888888;
-  font-size: 1.2em;
-  margin-right: 48px;
+.header__links {
+  color: $grey;
+  display: flex;
+  flex-direction: row;
+  font-size: $s-size;
+  justify-content: space-evenly;
   text-decoration: none;
 }

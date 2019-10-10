@@ -1,0 +1,28 @@
+.upcoming-event {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.upcoming-event__button-layout {
+  margin-top: $l-size;
+  padding: $m-size 0;
+}
+.upcoming-event__image {
+  // float: right;
+  margin: $m-size 0 0 $m-size;
+  max-width: 300px;
+}
+.upcoming-event__title {
+  color: $white;
+  text-shadow: 3px 3px 3px $red;
+}
+
+.upcoming-event a:link, .upcoming-event a:visited {
+  color: $light-red;
+  font-weight: bolder;
+}
+
+.control-buttons button, .control-buttons button:hover, .control-buttons button a, .control-buttons button a:hover{
+  color: $light-red;
+  font-weight: bolder;
+}

@@ -1,13 +1,13 @@
 blockquote.news-1 {
-  line-height: 1.8em;
+  line-height: $m-plus-size;
 }
 
 .more-info p.address {  
   font-style: italic;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $white;
 }
 
 .more-info p .hell-money {
   font-weight: bold;
-  color: #B34040;
+  color: $light-red;
 }
