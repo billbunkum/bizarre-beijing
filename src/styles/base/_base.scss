@@ -16,6 +16,10 @@ body {
 }
 
 // LINKS
+.is-active {
+  font-weight: bold;
+}
+
 a, a:link, a:hover, a:visited {
   text-decoration: none;
 }
@@ -33,7 +37,6 @@ h1 {
   font-size: $xl-size;
   text-shadow: 2px 2px 2px $white;
 }
-
 h2 {
   color: $red;
   font-family: 'Creepster', cursive;
@@ -43,7 +46,7 @@ h2 {
   text-align: center;
   text-shadow: 2px 2px 2px $white;
 }
-
 h3 {
   margin: $m-size 0 $m-size 0;
 }
+
