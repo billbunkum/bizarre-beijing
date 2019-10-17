@@ -2,17 +2,21 @@
   // background-color: blue;
   background: url(/img/798_building.png) black;
   border-bottom: 1px solid $grey;
+  height: 20rem;
   margin: $m-size 0 $xl-size 0;
   text-align: center;
 }
 .is-active {
-  font-weight: bold;
+  font-weight: 1000;
+  // text-decoration: underline;
 }
 .header__links {
   color: $grey;
   display: flex;
   flex-direction: row;
-  font-size: $m-size;
+  font-size: $l-size;
   justify-content: space-evenly;
+  margin: $m-size 0;
   text-decoration: none;
+  text-shadow: 1px 1px 1px $black;
 }
