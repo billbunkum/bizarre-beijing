@@ -1,0 +1,12 @@
+.messages-sold-out {
+  color: $light-red;
+  text-shadow: 1px 1px 1px $red;
+  font-size: $l-size;
+  font-weight: 1000;
+  margin: $s-size;
+}
+@media (max-width: 45rem) {
+  .messages-sold-out {
+    text-align: center;
+  }
+}

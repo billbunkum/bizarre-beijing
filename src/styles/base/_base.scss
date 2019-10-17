@@ -9,19 +9,17 @@ body {
   font-size: $m-size;
   font-weight: 300;
   margin: 0 auto;
-  padding: 0 $m-size;
+  max-width: 65rem;
 }
 .main-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
+  padding: 0 $m-size;
 }
 
 // LINKS
-.is-active {
-  font-weight: bold;
-}
 a, a:link, a:hover, a:visited {
   text-decoration: none;
 }

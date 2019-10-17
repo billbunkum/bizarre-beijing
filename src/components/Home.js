@@ -3,10 +3,14 @@ import UpcomingEvent from './UpcomingEvent.js';
 import PSA from './PSA.js';
 
 class Home extends React.Component {
+  state = {
+    soldOut: undefined
+  };
+  
   render() {
     return (
       <div>
-        <UpcomingEvent />
+        <UpcomingEvent soldOut={ this.state.soldOut }/>
         <PSA />
       </div>
     );

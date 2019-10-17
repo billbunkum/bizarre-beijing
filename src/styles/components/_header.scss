@@ -5,6 +5,9 @@
   margin: $m-size 0 $xl-size 0;
   text-align: center;
 }
+.is-active {
+  font-weight: bold;
+}
 .header__links {
   color: $grey;
   display: flex;

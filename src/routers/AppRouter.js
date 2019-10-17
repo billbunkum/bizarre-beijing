@@ -6,9 +6,10 @@ import NewsPage from '../components/NewsPage.js';
 import PageNotFound from '../components/PageNotFound.js';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const AppRouter = () => {
+  
   return (
     <BrowserRouter>
       <div>

@@ -1,8 +1,13 @@
 import React from 'react';
+import Events from './Events.js';
+import Messages from './Messages.js';
 import MoreInfoButton from './MoreInfoButton.js';
 import RSVPButton from './RSVPButton.js';
 
 class UpcomingEvent extends React.Component { 
+
+// MAY NEED LOGIC TO DISPLAY events array FROM Events COMPONENT
+
   render() {
     return (
       <div className="main-content">
@@ -10,6 +15,7 @@ class UpcomingEvent extends React.Component {
         <div className="upcoming-event">
           <div className="upcoming-event__header">
             <h3 className="upcoming-event__title">Friday 13th Haunt Tour</h3>
+            {this.props.soldOut && <p><Messages /></p>}
             <img src="/img/xuanwumen_church.png"
               className="upcoming-event__image"
               />

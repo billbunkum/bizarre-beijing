@@ -1,0 +1,15 @@
+.news-page {
+  border: 3px solid $grey;
+  margin: $s-size;
+  padding: $m-size;
+}
+.news-page__subtitle {
+  border-bottom: 1px solid $grey;
+  padding-bottom: $s-size;
+}
+.news-page__autograph {
+  margin-top: $s-size;
+}
+.news-page__buttons {
+  margin: $s-size;
+}

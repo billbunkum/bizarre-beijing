@@ -20,7 +20,7 @@
 }
 .upcoming-event__image {
   margin: $s-size;
-  max-width: 300px;
+  max-width: 30rem;
 }
 .upcoming-event__abstract {
   margin: $s-size;
@@ -43,10 +43,15 @@
     align-items: flex-start;
     flex-direction: column;
   }
+  .upcoming-event__header {
+    margin: 0 auto;
+  }
   .upcoming-event__image {
+    margin-bottom: $l-size;
     max-width: 45rem;
   }
   .upcoming-event__title {
+    font-size: $l-size;
     margin: $s-size;
     padding: 0;
   }

@@ -1,0 +1,14 @@
+.contact-page-content {
+  border: 3px solid $grey;
+  margin: $s-size;
+  padding: $m-size;
+}
+.send-button button {
+  color: $light-red;
+  font-weight: 1000;
+}
+@media (max-width: 45rem) {
+  .send-button button {
+    margin-top: $s-size;
+  }
+}
