@@ -2,7 +2,9 @@ footer {
   background-color: $green;
   border-top: 1px solid $grey;
   color: $grey;
+  display: flex;
+  justify-content: center;
   margin-top: $m-size;
   padding: $m-size 0px;
-  text-align: center;
+  text-decoration: none;
 }

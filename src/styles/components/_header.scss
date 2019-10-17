@@ -1,14 +1,15 @@
 .header {
-  background-color: $black;
+  // background-color: blue;
+  background: url(/img/798_building.png) black;
+  border-bottom: 1px solid $grey;
   margin: $m-size 0 $xl-size 0;
   text-align: center;
 }
-
 .header__links {
   color: $grey;
   display: flex;
   flex-direction: row;
-  font-size: $s-size;
+  font-size: $m-size;
   justify-content: space-evenly;
   text-decoration: none;
 }

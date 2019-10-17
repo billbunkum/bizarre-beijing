@@ -1,4 +1,3 @@
-// CHANGE TO rem
 html {
   font-size: 62.5%;
 }
@@ -7,19 +6,22 @@ body {
   background-color: $black;
   color: $white;
   font-family: 'Titillium Web', sans-serif;
-  /* font-family: 'Futura', Arial, sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: $s-size;
+  font-size: $m-size;
   font-weight: 300;
   margin: 0 auto;
   padding: 0 $m-size;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
 }
 
 // LINKS
 .is-active {
   font-weight: bold;
 }
-
 a, a:link, a:hover, a:visited {
   text-decoration: none;
 }

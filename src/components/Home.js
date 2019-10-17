@@ -1,13 +1,13 @@
 import React from 'react';
 import UpcomingEvent from './UpcomingEvent.js';
-import Notice from './Notice.js';
+import PSA from './PSA.js';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
         <UpcomingEvent />
-        <Notice />
+        <PSA />
       </div>
     );
   };

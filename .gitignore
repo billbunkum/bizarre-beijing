@@ -3,6 +3,9 @@
 .AppleDouble
 .LSOverride
 
+# UNNEEDED
+RAWS/
+
 # GENERATED FILES
 node_modules/
 yarn.lock

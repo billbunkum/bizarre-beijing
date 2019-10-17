@@ -5,21 +5,21 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h1 className="display-2">Bizarre Beijing</h1> 
+        <h1>Bizarre Beijing</h1> 
         <div className="header__links">
           <NavLink to="/" 
             activeClassName="is-active"
             exact={true}
           >
-            Home</NavLink> 
+            HOME</NavLink> 
           <NavLink to="/news" 
             activeClassName="is-active"
           >
-            News</NavLink>
+            NEWS</NavLink>
           <NavLink to="/contact" 
             activeClassName="is-active"
           >
-            Contact Us</NavLink>
+            CONTACT US</NavLink>
         </div>
       </div>
     )
