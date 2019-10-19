@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import GoHomeButton from './GoHomeButton.js';
 
 class PageNotFound extends React.Component {
   render() {
@@ -10,12 +10,12 @@ class PageNotFound extends React.Component {
     return (
       <div className="main-content">
         <div className="page-not-found">
-          <h3>{message.english}</h3> 
-          <h3>{message.chinese}</h3>
-          <div className="control-buttons page-not-found__buttons">
-            <button className="btn btn-outline-light btn-lg">
-              <Link to="/">Back Home</Link>
-            </button>
+          <div className="page-not-found__headlines">
+            <h3>{message.english}</h3> 
+            <h3>{message.chinese}</h3>
+          </div>
+          <div className="page-not-found__button">
+            <GoHomeButton />
           </div>
         </div>
       </div>

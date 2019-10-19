@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MoreInfoButton = (props) => {
-  const URL = "/more-info/" + props.eventIndex;
-
+const GoHomeButton = () => {
   return (
     <div className="control-buttons">
       <button className="btn btn-outline-light btn-lg">
-        <Link to={URL}>More info...</Link>
+        <Link to="/">Back Home</Link>
       </button>
     </div>
   );
 };
 
-export default MoreInfoButton;
+export default GoHomeButton;

@@ -6,8 +6,10 @@
   padding: $m-size;
   text-align: center;
 }
-.page-not-found__buttons {
-  border-top: 1px solid $grey;
+.page-not-found__headlines {
+  border-bottom: 1px solid $grey;
+  margin-bottom: $s-size;
+}
+.page-not-found__button {
   margin-top: $s-size;
-  padding-top: $m-size;
 }

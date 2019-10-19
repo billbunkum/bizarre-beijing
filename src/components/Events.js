@@ -1,39 +1,33 @@
 import React from 'react';
+import RSVPButton from './RSVPButton.js';
+import Messages from './Messages.js';
+import MoreInfoButton from './MoreInfoButton.js';
 
-// PLAYGROUND
-
-const Events = () => {
-  const eventDetails = {
-    capacity: 18,
-    date: "October 18, 2019",
-    endTime: "9:00pm",
-    imagePath: "/img/xuanwumen_church.png",
-    price: "¥280",
-    place: "Xuanwumen (in front of Xuanwumen Catholic Church)",
-    startTime: "6:30pm",
-    title: "October 18th Haunt Tour"
-  };
-
+const Events = (props) => {
   return (
     <div className="upcoming-event">
       <div className="upcoming-event__header">
-        <h3 className="upcoming-event__title">{eventDetails.title}</h3>
-        {this.props.soldOut && <p><Messages /></p>}
-        <img src={eventDetails.imagePath}
+        <h3 className="upcoming-event__title">{props.event.title}</h3>
+        {props.event.soldOut && <Messages />}
+        <img src={props.event.imagePath}
           className="upcoming-event__image"
           />
       </div>
       <div className="upcoming-event__abstract">
         <p className="upcoming-event__abstract__directions">
-          Date: {eventDetails.date}<br />
-          Time: {eventDetails.startTime} - {eventDetails.endTime}<br />
-          Price: {eventDetails.price}<br />
-          Place: {eventDetails.place} 
+          Date: {props.event.date}<br />
+          Time: {props.event.startTime} - {props.event.endTime}<br />
+          Price: {props.event.price}<br />
+          Place: {props.event.place} 
         </p>
         <p className="upcoming-event__abstract__details">
-          We will gather at 6:15 and depart at 6:30 sharp.<br />
-          Due to safety concerns in regards to possible attacks by supernatural forces, we will limit the number of participants to <em>{eventDetails.capacity} people</em>.
+          We will gather at {props.event.gatherTime} and depart at {props.event.departTime} sharp.<br />
+          Due to safety concerns in regards to possible attacks by supernatural forces, we will limit the number of participants to <em>{props.event.capacity} people</em>.
         </p>
+      </div>
+      <div className="upcoming-event__buttons">
+          <RSVPButton />
+          <MoreInfoButton eventIndex={props.eventIndex} />
       </div>
     </div>
   )
