@@ -21,6 +21,7 @@
 .upcoming-event__image {
   margin: $s-size;
   max-width: 30rem;
+  width: 100%;
 }
 .upcoming-event__abstract {
   margin: $s-size;
@@ -49,6 +50,7 @@
   .upcoming-event__image {
     margin-bottom: $l-size;
     max-width: 45rem;
+    
   }
   .upcoming-event__title {
     font-size: $l-size;

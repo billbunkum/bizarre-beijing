@@ -1,5 +1,4 @@
 .header {
-  // background-color: blue;
   background: url(/img/798_building.png) black;
   border-bottom: 1px solid $grey;
   height: 20rem;
@@ -8,15 +7,20 @@
 }
 .is-active {
   font-weight: 1000;
-  // text-decoration: underline;
 }
 .header__links {
   color: $grey;
   display: flex;
   flex-direction: row;
-  font-size: $l-size;
+  font-size: $m-plus-size;
   justify-content: space-evenly;
-  margin: $m-size 0;
+  margin: $l-size 0;
   text-decoration: none;
   text-shadow: 1px 1px 1px $black;
+}
+@media (min-width: 45rem) {
+  .header__links {
+    margin-top: $xxxl-size;
+    font-size: $l-size;
+  }
 }

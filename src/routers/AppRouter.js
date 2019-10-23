@@ -25,19 +25,19 @@ class AppRouter extends React.Component {
               render={() => <Home 
                 events={this.props.events}
                 />} 
-             />
+              />
             <Route 
               path="/contact" 
               component={ContactPage} 
-             />
-
-            <Route exact path="/more-info/:id"
+              />
+            <Route 
+              path="/more-info/:id"
               component={MoreInfoPage}
-             />
+              />
             <Route 
               path="/news" 
               component={NewsPage} 
-             />
+              />
             <Route component={PageNotFound} />
           </Switch>
           <Footer />

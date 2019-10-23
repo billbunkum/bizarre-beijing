@@ -33,7 +33,7 @@ export function getEvents() {
       place: "Xuanwumen (in front of Xuanwumen Catholic Church)",
       price: "¥280",
       specialHauntContent: undefined,
-      soldOut: false,
+      soldOut: true,
       startTime: "6:30pm",
       title: "October 26th Haunt Tour"
     }
