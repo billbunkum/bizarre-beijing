@@ -12,6 +12,22 @@ Uses: Babel (JSX compilation), Live-server (local server), Yarn/NPM (installatio
   + Live-server
   + Babel
   + NodeJS
+  + Webpack
+  + Other **Plugins**:
+    1. babel-core
+    2. react-modal
+    3. sass-loader
+    4. node-sass
+    5. normalize.css (to stop diff. browser's css defaults)
+    6. react-router
+    7. redux
+    8. uuid (to generate random uuid's)
+    9. Babel spread operator (for Object spreader `...someObj` syntax)
+      ` $ yarn add babel-plugin-transform-object-rest-spread@6.26.0 `
+      Then, list in the `.babelrc` file under **plugins**
+      ` "plugins": [ "transform-class-properties", "transform-object-rest-spread" ]`
+      + the Array spreader works fine w/Babel
+
 
 2. Generate `package.json`
   `$ yarn init`
@@ -389,6 +405,11 @@ Can remove other *scripts* tags and replace them w/
 ` } `
   + Says that, *until* viewport exceeds 45rem, use these Styles.
   + The **`*`** could be *any* selector, such as `body`, `p` or something you have created like `.that-class-i-made__okay`
+
+## Timestamps
++ All timestamps start: January 1st, 1970
++ They are in milliseconds in relation to this date.
+
 ---------------
 ## USEFUL LINKS
 + [Newest Dependency Versions](https://david-dm.org/jtangelder/sass-loader?type=dev)

@@ -63,12 +63,10 @@
   1. import `Link` and `NavLink`components into `src/app.js`
     `import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom'; `
   2. Use `Link` in JSX where there would be an `<a>` tag, using the `to="<some path>"`
-    *EXAMPLE*: 
-    `<Link to="/">Go Home</Link>` 
+    *EXAMPLE*: `<Link to="/">Go Home</Link>` 
   3. Use `NavLink` w/page *navigation*. `NavLink` allows for custom styling.
     + Target `.is-active` in SCSS file to style it. There are several values defined in the API which can be used.
-      *EXAMPLE*: 
-      `<NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>`
+      *EXAMPLE*: `<NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>`
 
 ## Modularizing
 1. Create `src/routers/` and `src/routers/AppRouter.js`
