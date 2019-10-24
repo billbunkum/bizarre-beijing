@@ -6,6 +6,7 @@
   text-align: center;
 }
 .is-active {
+  color: $light-red !important;
   font-weight: 1000;
 }
 .header__links {
@@ -18,9 +19,30 @@
   text-decoration: none;
   text-shadow: 1px 1px 1px $black;
 }
-@media (min-width: 45rem) {
+@media (min-width: 30rem) {
   .header__links {
-    margin-top: $xxxl-size;
     font-size: $l-size;
+    margin-top: $xxxl-size;
+    padding-top: $s-size;
+  }
+}
+// ANIMATIONS
+.header__animations {
+  animation-name: ghostly-background;
+  animation-duration: 5s; //completes one play cycle
+  animation-iteration-count: infinite;
+}
+@keyframes ghostly-background {
+  0% {
+    text-shadow: 0rem 0rem 0.2rem $ghost-red;
+  }
+  25% {
+    text-shadow: 0.5rem -0.6rem 0.5rem $red;
+  }
+  50% {
+    text-shadow: -0.5rem -0.6rem 0.5rem $light-red;
+  }
+  100% {
+    text-shadow: 0rem 0rem 0.2rem $ghost-red;
   }
 }

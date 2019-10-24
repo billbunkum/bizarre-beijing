@@ -8,7 +8,7 @@ const FAQPage = () => {
       <div className="faq-page">
         <div className="faq-page__questions">
           <h3>How to book a tour with us?</h3>
-          <div>Booking a tour is <em>easy</em>! Send us a <NavLink to="/contact" className="faq-page__inline-link">message </NavLink> and we will get back with you ASAP.</div>
+          <div>Booking a tour is <em>easy</em>! Send us a <Link to="/contact" className="faq-page__inline-link">message </Link> and we will get back with you ASAP.</div>
         </div>
 
         <div className="faq-page__questions">
