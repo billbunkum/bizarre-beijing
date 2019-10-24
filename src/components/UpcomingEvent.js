@@ -3,11 +3,12 @@ import Events from './Events.js';
 
 class UpcomingEvent extends React.Component { 
   render() {
+    console.log('here',this.props.events)
+    
     return (
-      <div className="main-content">
+      <div className="main-content"> 
         <h2>Upcoming Events</h2>
-{/* START GENERATING EVENTS HERE */}
-        {
+        { 
           this.props.events.map((event, index) => {
             return (
               <Events key={index} 
@@ -17,8 +18,8 @@ class UpcomingEvent extends React.Component {
             );
           })
         }
-{/* END GENERATED CONTENT */}
-      </div>
+
+      </div>  
     )
   };
 };

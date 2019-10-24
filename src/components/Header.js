@@ -18,10 +18,10 @@ class Header extends React.Component {
             >
             NEWS
             </NavLink>
-          <NavLink to="#"
+          <NavLink to="/faq"
             activeClassName="is-active"
             >
-            EVENTS
+            FAQ
             </NavLink>
           <NavLink to="/contact" 
             activeClassName="is-active"

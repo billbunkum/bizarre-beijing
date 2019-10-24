@@ -3,9 +3,10 @@ import GoHomeButton from './GoHomeButton.js';
 import RSVPButton from './RSVPButton.js';
 import GeneralHauntDescription from './GeneralHauntDescription.js';
 import SpecialHauntDescription from './SpecialHauntDescription.js';
-import { getEvents } from './EventsFile.js';
+import { getEvents, filterEvents } from './EventsFile.js';
 
-const events = getEvents();
+// const events = getEvents();
+const events = filterEvents();
 class MoreInfoPage extends React.Component {
   render() {
     const eventId = this.props.match.params.id;

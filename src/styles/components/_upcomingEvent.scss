@@ -1,3 +1,9 @@
+.main-content__alternate {
+  display: flex;
+  justify-content: center;
+  width: 0 auto;
+}
+
 .upcoming-event {
   border: 3px solid $grey;
   display: flex;
