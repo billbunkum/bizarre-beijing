@@ -26,8 +26,8 @@ const Events = (props) => {
         </p>
       </div>
       <div className="upcoming-event__buttons">
-          <RSVPButton />
-          <MoreInfoButton eventIndex={props.eventIndex} />
+        <RSVPButton />
+        <MoreInfoButton eventIndex={props.eventIndex} />
       </div>
     </div>
   )

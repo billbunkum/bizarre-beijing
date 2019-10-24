@@ -1,0 +1,22 @@
+.faq-page {
+  border: 3px solid $grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: $s-size;
+  padding: $m-size;
+}
+.faq-page__buttons {
+  display: flex;
+  // justify-content: space-evenly;
+  margin-top: $s-size;
+}
+.faq-page__questions {
+  border-bottom: 1px solid $grey;
+  margin-bottom: $m-plus-size;
+  padding-bottom: $m-size;
+}
+.faq-page__inline-link {
+  color: $light-red !important;
+  font-weight: 1000;
+}
