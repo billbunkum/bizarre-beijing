@@ -17,9 +17,9 @@ class AppRouter extends React.Component {
   render() {  
     return (
       <BrowserRouter>
-        <div>
+        <div className="main-content">
           <Header />
-          <div className="main-app-spacer">
+          {/* <div className="main-app-spacer"> */}
             <Switch>
               <Route 
                 path="/" 
@@ -46,7 +46,7 @@ class AppRouter extends React.Component {
                 />
               <Route component={PageNotFound} />
             </Switch>
-          </div>
+          {/* </div> */}
           <Footer />
         </div>
       </BrowserRouter>

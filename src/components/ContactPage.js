@@ -3,7 +3,7 @@ import React from 'react';
 class ContactPage extends React.Component {
   render() {
     return (
-      <div className="main-content">
+      <div>
         <h2>Contact Us</h2>
         <form action="https://formspree.io/info@bizarrebeijing.com" 
           method="POST"

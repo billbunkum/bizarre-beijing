@@ -8,7 +8,7 @@ class Home extends React.Component {
   render() {
 
     return (
-      <div className="main-content">
+      <div>
         <h2>Announcements</h2>
         <div className="announcements">
           <div className="announcements__content home-page__message">

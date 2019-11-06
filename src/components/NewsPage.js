@@ -5,7 +5,7 @@ import { FallNewsMessage } from './Messages.js';
 class NewsPage extends React.Component {
   render() {
     return (
-      <div className="main-content">
+      <div>
         <h2>Bizarre News</h2>
 
         <div className="announcements">

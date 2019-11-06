@@ -12,7 +12,7 @@ class MoreInfoPage extends React.Component {
     const eventId = this.props.match.params.id;
 
     return (
-      <div className="main-content">
+      <div>
         <div className="more-info">
           <div className="more-info__header">
             <h3 className="more-info__title">
