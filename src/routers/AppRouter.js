@@ -19,7 +19,7 @@ class AppRouter extends React.Component {
       <BrowserRouter>
         <div className="main-content">
           <Header />
-          {/* <div className="main-app-spacer"> */}
+          {/* <div className="main-content__spacer"> */}
             <Switch>
               <Route 
                 path="/" 

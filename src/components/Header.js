@@ -4,8 +4,10 @@ import { NavLink } from 'react-router-dom';
 class Header extends React.Component {
   render() {
     return (
-      <div className="header">
-        <h1>Bizarre Beijing</h1> 
+      <div>
+        <div className="header">
+          <h1>Bizarre Beijing</h1> 
+        </div>
         <div className="header__links">
           <NavLink to="/" 
             activeClassName="is-active header__animations"

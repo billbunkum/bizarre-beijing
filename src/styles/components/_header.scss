@@ -2,30 +2,32 @@
   background: url(/img/798_building.png) black;
   border-bottom: 1px solid $grey;
   height: 20rem;
-  margin: $m-size 0 $l-size 0;
+  margin-bottom: 1%;
   text-align: center;
 }
-.is-active {
-  color: $light-red !important;
-  font-weight: 1000;
-}
+
+// NAVIGATION
 .header__links {
+  border-bottom: 1px solid $grey;
   color: $grey;
   display: flex;
   flex-direction: row;
   font-size: $m-plus-size;
   justify-content: space-evenly;
-  margin: $l-size 0;
+  margin-bottom: $m-size;
   text-decoration: none;
   text-shadow: 1px 1px 1px $black;
 }
 @media (min-width: 30rem) {
   .header__links {
     font-size: $m-plus-plus-size;
-    margin-top: $xl-size;
-    padding-top: $s-size;
   }
 }
+.is-active {
+  color: $light-red !important;
+  font-weight: 1000;
+}
+
 // ANIMATIONS
 .header__animations {
   animation-name: ghostly-background;

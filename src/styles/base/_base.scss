@@ -12,7 +12,8 @@ body {
   max-width: 65rem;
   min-width: 30rem;
 }
-// USED IN MOST COMPONENTS
+
+// USED IN AppRouter.js
 .main-content {
   display: flex;
   flex-direction: column;
@@ -20,9 +21,8 @@ body {
   min-height: 100vh;
   padding: 0 $m-size;
 }
-// USED IN AppRouter.js
-.main-app-spacer {
-  margin-top: $xl-size;
+.main-content__spacer {
+  margin-top: $l-size;
 }
 
 // TITLES
@@ -31,9 +31,10 @@ body {
   padding-bottom: $s-size;
 }
 
+// RED BOUNDING BOX
 .announcements {
   // background-color: $grey;
-  background: radial-grandient(circle at center, $grey 0, $black 100);
+  // background: radial-grandient(circle at center, $grey 0, $black 100);
   border: 3px solid $red;
   display: flex;
   flex-direction: column;
