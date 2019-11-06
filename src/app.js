@@ -5,7 +5,8 @@ import AppRouter from './routers/AppRouter.js';
 import { getEvents, filterEvents } from './components/EventsFile.js';
 import './styles/styles.scss';
 
-const events = filterEvents();
+// const events = filterEvents();
+const events = getEvents();
 const allEvents = getEvents();
 
 // TRYING react context:

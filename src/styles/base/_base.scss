@@ -12,12 +12,38 @@ body {
   max-width: 65rem;
   min-width: 30rem;
 }
+// USED IN MOST COMPONENTS
 .main-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
   padding: 0 $m-size;
+}
+// USED IN AppRouter.js
+.main-app-spacer {
+  margin-top: $xl-size;
+}
+
+// TITLES
+.subtitle {
+  border-bottom: 1px solid $grey;
+  padding-bottom: $s-size;
+}
+
+.announcements {
+  // background-color: $grey;
+  background: radial-grandient(circle at center, $grey 0, $black 100);
+  border: 3px solid $red;
+  display: flex;
+  flex-direction: column;
+  margin: $s-size;
+}
+.announcements__content {
+  border: 1px solid $grey;
+  font-size: $m-plus-size;
+  padding-bottom: $s-size;
+  padding-top: $m-size;
 }
 
 // LINKS
@@ -51,3 +77,7 @@ h3 {
   margin: $m-size 0 $m-size 0;
 }
 
+// LISTS
+ul {
+  list-style-type: circle;
+}

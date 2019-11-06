@@ -19,32 +19,34 @@ class AppRouter extends React.Component {
       <BrowserRouter>
         <div>
           <Header />
-          <Switch>
-            <Route 
-              path="/" 
-              exact={true} 
-              render={() => <Home 
-                events={this.props.events}
-                />} 
-              />
-            <Route 
-              path="/contact" 
-              component={ContactPage} 
-              />
-            <Route 
-              path="/more-info/:id"
-              component={MoreInfoPage}
-              />
-            <Route 
-              path="/news" 
-              component={NewsPage} 
-              />
-            <Route
-              path="/faq"
-              component={FAQPage} 
-              />
-            <Route component={PageNotFound} />
-          </Switch>
+          <div className="main-app-spacer">
+            <Switch>
+              <Route 
+                path="/" 
+                exact={true} 
+                render={() => <Home 
+                  events={this.props.events}
+                  />} 
+                />
+              <Route 
+                path="/contact" 
+                component={ContactPage} 
+                />
+              <Route 
+                path="/more-info/:id"
+                component={MoreInfoPage}
+                />
+              <Route 
+                path="/news" 
+                component={NewsPage} 
+                />
+              <Route
+                path="/faq"
+                component={FAQPage} 
+                />
+              <Route component={PageNotFound} />
+            </Switch>
+          </div>
           <Footer />
         </div>
       </BrowserRouter>

@@ -5,6 +5,7 @@ import GoHomeButton from './GoHomeButton.js';
 const FAQPage = () => {
   return (
     <div className="main-content">
+      <h2>FAQ</h2>
       <div className="faq-page">
         <div className="faq-page__questions">
           <h3>How to book a tour with us?</h3>

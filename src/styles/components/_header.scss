@@ -2,7 +2,7 @@
   background: url(/img/798_building.png) black;
   border-bottom: 1px solid $grey;
   height: 20rem;
-  margin: $m-size 0 $xl-size 0;
+  margin: $m-size 0 $l-size 0;
   text-align: center;
 }
 .is-active {
@@ -21,8 +21,8 @@
 }
 @media (min-width: 30rem) {
   .header__links {
-    font-size: $l-size;
-    margin-top: $xxxl-size;
+    font-size: $m-plus-plus-size;
+    margin-top: $xl-size;
     padding-top: $s-size;
   }
 }

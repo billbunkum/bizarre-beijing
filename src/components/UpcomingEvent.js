@@ -3,11 +3,13 @@ import Events from './Events.js';
 
 class UpcomingEvent extends React.Component { 
   render() {
-    console.log('here',this.props.events)
+    // console.log('here',this.props.events)
     
     return (
-      <div className="main-content"> 
-        <h2>Upcoming Events</h2>
+      <div> 
+        <div className="upcoming-event__title-spacer">
+          <h2>Upcoming Events</h2>
+        </div>
         { 
           this.props.events.map((event, index) => {
             return (
